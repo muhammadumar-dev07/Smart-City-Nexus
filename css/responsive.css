@@ -1,0 +1,28 @@
+/* ===================================================================
+   RESPONSIVE — global, cross-cutting breakpoint adjustments.
+   Component-specific breakpoints live in their own files; this file
+   only holds page-wide rhythm changes.
+=================================================================== */
+
+@media (max-width: 960px) {
+  .section {
+    padding-block: var(--space-2xl);
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --container-pad: 1.25rem;
+  }
+
+  .section {
+    padding-block: var(--space-xl);
+  }
+
+  h1 { line-height: 1.15; }
+
+  .cta {
+    margin-inline: var(--space-sm);
+    padding: var(--space-xl) var(--space-md);
+  }
+}

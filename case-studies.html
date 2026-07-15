@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies — SmartCity Nexus</title>
+  <meta name="description" content="How cities use SmartCity Nexus to unify traffic, energy, safety, and infrastructure data.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/glass.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/page-header.css">
+  <link rel="stylesheet" href="css/case-studies.css">
+  <link rel="stylesheet" href="css/cta.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav glass" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true"></span>
+        SmartCity Nexus
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#features" class="nav__link">Platform</a>
+        <a href="index.html#about" class="nav__link">How it works</a>
+        <a href="case-studies.html" class="nav__link" style="color:var(--color-text-primary);">Case Studies</a>
+        <a href="pricing.html" class="nav__link">Pricing</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="about.html" class="btn btn--ghost btn--sm">About</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Request a demo</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-header">
+      <div class="container">
+        <span class="page-header__crumb"><a href="index.html">Home</a> / Case Studies</span>
+        <h1>Illustrative deployment scenarios</h1>
+        <p class="text-lead">Representative examples of how a Nexus rollout typically plays out across different city sizes and priorities.</p>
+      </div>
+    </section>
+
+    <!-- ============ CASE STUDIES ============ -->
+    <section class="section">
+      <div class="container">
+
+        <div class="case-study" data-reveal>
+          <div class="case-study__photo">
+            <img
+              src="https://images.pexels.com/photos/32660206/pexels-photo-32660206.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Illuminated city skyline at night with dense high-rise buildings"
+              loading="lazy"
+            >
+          </div>
+          <div>
+            <div class="case-study__eyebrow">
+              <span class="text-mono" style="color:var(--color-accent);">Traffic layer</span>
+              <span class="case-study__city">Austin, USA</span>
+            </div>
+            <h3>Cutting average incident response by a third</h3>
+            <p>Austin's mobility team started with a single-district traffic pilot, feeding 40 intersections into Nexus's congestion map and adaptive signal timing. Within two quarters, response time to reported incidents dropped noticeably, and the pilot expanded to the full downtown grid.</p>
+            <div class="case-study__stats">
+              <div><span class="case-study__stat-value">33%</span><span class="case-study__stat-label">Faster incident response</span></div>
+              <div><span class="case-study__stat-value">40→310</span><span class="case-study__stat-label">Intersections connected</span></div>
+              <div><span class="case-study__stat-value">6 wks</span><span class="case-study__stat-label">Time to first live layer</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study case-study--reverse" data-reveal>
+          <div class="case-study__photo">
+            <img
+              src="https://images.pexels.com/photos/23914731/pexels-photo-23914731.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Modern skyscrapers glowing at night, reflected in a calm waterfront"
+              loading="lazy"
+            >
+          </div>
+          <div>
+            <div class="case-study__eyebrow">
+              <span class="text-mono" style="color:var(--color-accent);">Energy layer</span>
+              <span class="case-study__city">Rotterdam, Netherlands</span>
+            </div>
+            <h3>Spotting substation load anomalies before they became outages</h3>
+            <p>Rotterdam connected its distribution network monitors to Nexus's energy layer to get ahead of aging substation infrastructure. Predictive load forecasting flagged three at-risk substations months before their previous inspection cycle would have caught them.</p>
+            <div class="case-study__stats">
+              <div><span class="case-study__stat-value">3</span><span class="case-study__stat-label">Outages prevented (est.)</span></div>
+              <div><span class="case-study__stat-value">94%</span><span class="case-study__stat-label">Peak grid capacity visibility</span></div>
+              <div><span class="case-study__stat-value">12 mo</span><span class="case-study__stat-label">Earlier fault detection</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study" data-reveal>
+          <div class="case-study__photo">
+            <img
+              src="https://images.pexels.com/photos/30606169/pexels-photo-30606169.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Night skyline with illuminated towers and a lit bridge over a river"
+              loading="lazy"
+            >
+          </div>
+          <div>
+            <div class="case-study__eyebrow">
+              <span class="text-mono" style="color:var(--color-accent);">Public safety layer</span>
+              <span class="case-study__city">Busan, South Korea</span>
+            </div>
+            <h3>One dashboard the operations team actually opens every morning</h3>
+            <p>Busan's infrastructure team had incident data spread across five separate systems. Consolidating alerts into a single Nexus console — with full audit history per alert — cut the time staff spent just locating information before a shift even started.</p>
+            <div class="case-study__stats">
+              <div><span class="case-study__stat-value">5→1</span><span class="case-study__stat-label">Systems consolidated</span></div>
+              <div><span class="case-study__stat-value">~20 min</span><span class="case-study__stat-label">Saved per shift handover</span></div>
+              <div><span class="case-study__stat-value">100%</span><span class="case-study__stat-label">Alerts with audit trail</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study case-study--reverse" data-reveal>
+          <div class="case-study__photo">
+            <img
+              src="https://images.pexels.com/photos/28970185/pexels-photo-28970185.jpeg?auto=compress&cs=tinysrgb&w=900"
+              alt="Vibrant city skyline reflecting in calm water at night"
+              loading="lazy"
+            >
+          </div>
+          <div>
+            <div class="case-study__eyebrow">
+              <span class="text-mono" style="color:var(--color-accent);">Full rollout</span>
+              <span class="case-study__city">Lahore, Pakistan</span>
+            </div>
+            <h3>A full four-layer rollout, staged district by district</h3>
+            <p>Lahore's pilot began with the water utility's leak-detection sensors, then expanded to traffic and energy over the following year. Predictive maintenance flags across the water network alone are projected to offset the platform's cost within twelve months.</p>
+            <div class="case-study__stats">
+              <div><span class="case-study__stat-value">4</span><span class="case-study__stat-label">Data layers live</span></div>
+              <div><span class="case-study__stat-value">~12 mo</span><span class="case-study__stat-label">Projected payback period</span></div>
+              <div><span class="case-study__stat-value">Districtwide</span><span class="case-study__stat-label">Staged rollout approach</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta" data-reveal>
+      <span class="eyebrow cta__eyebrow">Get started</span>
+      <h2>See what a rollout would look like for your city</h2>
+      <p>We'll walk through a scenario tailored to your city's size and current systems — no commitment required.</p>
+      <div class="cta__actions">
+        <a href="contact.html" class="btn btn--primary">Request a demo</a>
+        <a href="pricing.html" class="btn btn--ghost">See pricing</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <span class="nav__logo-mark" aria-hidden="true"></span>
+            SmartCity Nexus
+          </div>
+          <p class="footer__tagline">One real-time operating layer for traffic, energy, water, and public safety.</p>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Platform</div>
+          <div class="footer__links">
+            <a href="index.html#features">Traffic</a>
+            <a href="index.html#features">Energy</a>
+            <a href="index.html#features">Public safety</a>
+            <a href="index.html#features">Open API</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Company</div>
+          <div class="footer__links">
+            <a href="about.html">About</a>
+            <a href="case-studies.html">Case studies</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <div class="footer__links">
+            <a href="mailto:muhammadumargomal123@gmail.com">muhammadumargomal123@gmail.com</a>
+            <a href="tel:+923351188090">+92 335 1188090</a>
+            <span class="text-small" style="color:var(--color-text-secondary);">Lahore, Pakistan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 SMARTCITY NEXUS — BUILT BY MUHAMMAD UMAR</span>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/muhammad-umar-647859338/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/muhammadumar-dev07" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="mailto:muhammadumargomal123@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

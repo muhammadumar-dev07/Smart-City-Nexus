@@ -1,0 +1,66 @@
+/* ===================================================================
+   TYPOGRAPHY
+=================================================================== */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  line-height: var(--lh-normal);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); font-weight: 500; }
+
+p {
+  color: var(--color-text-secondary);
+  line-height: var(--lh-normal);
+}
+
+.text-lead {
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-snug);
+}
+
+.text-small {
+  font-size: var(--fs-small);
+}
+
+/* Mono is reserved for data, labels, and coordinates — reinforces the
+   "technical schematic" signature. Used sparingly, never for body copy. */
+.text-mono {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+.eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  display: inline-block;
+}

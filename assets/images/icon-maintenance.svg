@@ -1,0 +1,19 @@
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="64,20 104,42 104,86 64,108 24,86 24,42" fill="#FAFAF9" stroke="#111111" stroke-width="2"/>
+  <polygon points="64,20 104,42 64,64 24,42" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+  <polygon points="64,64 104,42 104,86 64,108" fill="#EDEDEB" stroke="#111111" stroke-width="2"/>
+  <g transform="translate(66,73)" fill="#3B5BFF" stroke="#111111" stroke-width="1.2">
+    <g id="teeth">
+      <rect x="-3" y="-16" width="6" height="7" rx="1"/>
+    </g>
+    <use href="#teeth" transform="rotate(45)"/>
+    <use href="#teeth" transform="rotate(90)"/>
+    <use href="#teeth" transform="rotate(135)"/>
+    <use href="#teeth" transform="rotate(180)"/>
+    <use href="#teeth" transform="rotate(225)"/>
+    <use href="#teeth" transform="rotate(270)"/>
+    <use href="#teeth" transform="rotate(315)"/>
+    <circle r="11" fill="#3B5BFF" stroke="#111111" stroke-width="1.2"/>
+    <circle r="4.5" fill="#FFFFFF" stroke="none"/>
+  </g>
+</svg>

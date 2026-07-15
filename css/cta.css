@@ -1,0 +1,70 @@
+/* ===================================================================
+   CTA BAND — the single dark surface on the page, used deliberately
+   for contrast/emphasis before the footer.
+=================================================================== */
+
+.cta {
+  margin-inline: var(--container-pad);
+  margin-block: var(--space-xl);
+  padding: var(--space-2xl) var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-dark);
+  background-image: radial-gradient(circle at 20% 20%, var(--color-accent-glow), transparent 45%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta__eyebrow {
+  color: var(--color-accent);
+}
+
+.cta h2 {
+  color: var(--color-text-inverse);
+  max-width: 26ch;
+  margin-inline: auto;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.cta p {
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 46ch;
+  margin-inline: auto;
+  margin-bottom: var(--space-lg);
+}
+
+.cta__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.cta .btn--primary {
+  background: var(--color-text-inverse);
+  color: var(--color-surface-dark);
+}
+
+.cta .btn--primary:hover {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.cta .btn--ghost {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: var(--color-text-inverse);
+}
+
+.cta .btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 640px) {
+  .cta__actions {
+    flex-direction: column;
+  }
+  .cta__actions .btn {
+    width: 100%;
+  }
+}

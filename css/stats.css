@@ -1,0 +1,57 @@
+/* ===================================================================
+   STATS BAR
+=================================================================== */
+
+.stats {
+  border-top: var(--border-width) solid var(--color-border-soft);
+  border-bottom: var(--border-width) solid var(--color-border-soft);
+  background: var(--color-bg);
+}
+
+.stats__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stats__item {
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  border-left: var(--border-width) solid var(--color-border-soft);
+}
+
+.stats__item:first-child {
+  border-left: none;
+}
+
+.stats__value {
+  font-family: var(--font-mono);
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  display: block;
+}
+
+.stats__suffix {
+  color: var(--color-accent);
+}
+
+.stats__label {
+  font-size: var(--fs-small);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-3xs);
+}
+
+@media (max-width: 760px) {
+  .stats__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stats__item:nth-child(3) {
+    border-left: none;
+  }
+  .stats__item:nth-child(odd) {
+    border-left: none;
+  }
+  .stats__item:nth-child(even) {
+    border-left: var(--border-width) solid var(--color-border-soft);
+  }
+}

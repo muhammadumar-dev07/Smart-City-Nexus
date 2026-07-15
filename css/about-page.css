@@ -1,0 +1,112 @@
+/* ===================================================================
+   ABOUT PAGE
+=================================================================== */
+
+.mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.mission__photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: var(--border-width) solid var(--color-border-soft);
+  box-shadow: var(--shadow-md);
+}
+
+.mission__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.mission__text h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.mission__text p + p {
+  margin-top: var(--space-sm);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+/* ---- Builder profile card ---- */
+.profile-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+}
+
+.profile-card__avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent), #6FE3B4);
+  display: grid;
+  place-items: center;
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  border: var(--border-width) solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.profile-card__name {
+  margin-bottom: 2px;
+}
+
+.profile-card__role {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-small);
+  margin-bottom: var(--space-sm);
+}
+
+.profile-card__bio {
+  max-width: 60ch;
+  margin-bottom: var(--space-md);
+}
+
+.profile-card__links {
+  display: flex;
+  gap: var(--space-2xs);
+  flex-wrap: wrap;
+}
+
+.profile-card__links a {
+  padding: 0.45rem 0.85rem;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: background var(--duration-fast) var(--ease-out), color var(--duration-fast) var(--ease-out);
+}
+
+.profile-card__links a:hover {
+  background: var(--color-border);
+  color: #FFFFFF;
+}
+
+@media (max-width: 860px) {
+  .mission {
+    grid-template-columns: 1fr;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — SmartCity Nexus</title>
+  <meta name="description" content="Simple, per-population pricing for SmartCity Nexus — no surprise overage fees.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/glass.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/page-header.css">
+  <link rel="stylesheet" href="css/pricing.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/cta.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav glass" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true"></span>
+        SmartCity Nexus
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#features" class="nav__link">Platform</a>
+        <a href="index.html#about" class="nav__link">How it works</a>
+        <a href="case-studies.html" class="nav__link">Case Studies</a>
+        <a href="pricing.html" class="nav__link" style="color:var(--color-text-primary);">Pricing</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="about.html" class="btn btn--ghost btn--sm">About</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Request a demo</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-header">
+      <div class="container">
+        <span class="page-header__crumb"><a href="index.html">Home</a> / Pricing</span>
+        <h1>Flat, per-population pricing</h1>
+        <p class="text-lead">No per-sensor metering, no surprise overage bills. Pick the tier that matches your city's size and data needs.</p>
+      </div>
+    </section>
+
+    <!-- ============ PRICING GRID ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="pricing-toggle" id="pricingToggle">
+          <button type="button" class="is-active" data-mode="monthly">Monthly</button>
+          <button type="button" data-mode="annual">Annual — save 20%</button>
+        </div>
+
+        <div class="pricing-grid">
+
+          <div class="pricing-card panel" data-reveal>
+            <div class="pricing-card__tier">District</div>
+            <p class="pricing-card__desc">For a single district or a focused pilot on one data layer.</p>
+            <div class="pricing-card__price" data-monthly="$1,200" data-annual="$960">$1,200<span class="pricing-card__price-unit">/mo</span></div>
+            <ul class="pricing-card__features">
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> One data layer (traffic, energy, or water)</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 250K population served</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Standard dashboard access</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Email support, 2-day response</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost">Get started</a>
+          </div>
+
+          <div class="pricing-card pricing-card--featured" data-reveal>
+            <span class="pricing-card__badge">Most popular</span>
+            <div class="pricing-card__tier">Metro</div>
+            <p class="pricing-card__desc">For city-wide rollouts across every core data layer.</p>
+            <div class="pricing-card__price" data-monthly="$3,800" data-annual="$3,040">$3,800<span class="pricing-card__price-unit">/mo</span></div>
+            <ul class="pricing-card__features">
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> All data layers — traffic, energy, water, safety</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 1M population served</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Predictive maintenance module included</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Dedicated integration engineer</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority support, 4-hour response</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary" style="background:#fff;color:#0D0D0D;">Get started</a>
+          </div>
+
+          <div class="pricing-card panel" data-reveal>
+            <div class="pricing-card__tier">Enterprise</div>
+            <p class="pricing-card__desc">For multi-city networks, regional authorities, or custom SLAs.</p>
+            <div class="pricing-card__price" style="font-size:1.75rem;">Custom quote</div>
+            <ul class="pricing-card__features">
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited population, multi-city rollout</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Dedicated infrastructure & custom SLA</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom integrations & data residency</li>
+              <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> 24/7 phone support</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost">Talk to sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING FAQ ============ -->
+    <section class="section section--subtle">
+      <div class="container">
+        <div class="features__header" data-reveal>
+          <span class="eyebrow">Pricing FAQ</span>
+          <h2>Before you reach out</h2>
+        </div>
+
+        <div class="faq" data-reveal>
+          <div class="faq__item is-open">
+            <button class="faq__question" type="button">
+              What counts as "population served"?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>The population within the municipal boundary covered by the data layers you activate — not the number of individual sensors or users.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" type="button">
+              Can we add data layers later without re-signing a contract?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>Yes — District and Metro plans can add layers at any time; billing simply adjusts on the next cycle.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" type="button">
+              Is there a setup or implementation fee?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__answer">
+              <p>District and Metro include standard integration at no extra cost. Enterprise deployments with custom integrations are scoped and quoted separately.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta" data-reveal>
+      <span class="eyebrow cta__eyebrow">Not sure which tier fits?</span>
+      <h2>Tell us about your city and we'll recommend one</h2>
+      <p>A five-minute conversation is usually enough to scope the right starting point.</p>
+      <div class="cta__actions">
+        <a href="contact.html" class="btn btn--primary">Talk to sales</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <span class="nav__logo-mark" aria-hidden="true"></span>
+            SmartCity Nexus
+          </div>
+          <p class="footer__tagline">One real-time operating layer for traffic, energy, water, and public safety.</p>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Platform</div>
+          <div class="footer__links">
+            <a href="index.html#features">Traffic</a>
+            <a href="index.html#features">Energy</a>
+            <a href="index.html#features">Public safety</a>
+            <a href="index.html#features">Open API</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Company</div>
+          <div class="footer__links">
+            <a href="about.html">About</a>
+            <a href="case-studies.html">Case studies</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <div class="footer__links">
+            <a href="mailto:muhammadumargomal123@gmail.com">muhammadumargomal123@gmail.com</a>
+            <a href="tel:+923351188090">+92 335 1188090</a>
+            <span class="text-small" style="color:var(--color-text-secondary);">Lahore, Pakistan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 SMARTCITY NEXUS — BUILT BY MUHAMMAD UMAR</span>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/muhammad-umar-647859338/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/muhammadumar-dev07" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="mailto:muhammadumargomal123@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/pricing-toggle.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

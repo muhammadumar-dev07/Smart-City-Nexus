@@ -1,0 +1,62 @@
+/* ===================================================================
+   LAYOUT — container, section rhythm, grid helpers
+=================================================================== */
+
+.container {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.section {
+  padding-block: var(--space-3xl);
+}
+
+.section--tight {
+  padding-block: var(--space-xl);
+}
+
+.section + .section,
+.stats + .section {
+  padding-top: var(--space-2xl);
+}
+
+.section--subtle {
+  background: var(--color-bg-subtle);
+}
+
+/* Blueprint hairline divider between sections */
+.section-divider {
+  border: none;
+  border-top: var(--border-width) solid var(--color-border-soft);
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex--between {
+  justify-content: space-between;
+}
+
+.flex--gap-sm { gap: var(--space-sm); }
+.flex--gap-md { gap: var(--space-md); }
+
+@media (max-width: 960px) {
+  .grid--3, .grid--4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
+}

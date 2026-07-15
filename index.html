@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCity Nexus — Infrastructure Intelligence for Modern Cities</title>
+  <meta name="description" content="SmartCity Nexus unifies traffic, energy, and public-safety data into one real-time operating layer for cities.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles: order matters — tokens/reset/type first, then layout, then components, then sections -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/glass.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="css/split.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/cta.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav glass" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true"></span>
+        SmartCity Nexus
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#features" class="nav__link">Platform</a>
+        <a href="#about" class="nav__link">How it works</a>
+        <a href="case-studies.html" class="nav__link">Case Studies</a>
+        <a href="pricing.html" class="nav__link">Pricing</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="about.html" class="btn btn--ghost btn--sm">About</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Request a demo</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img
+          src="https://images.pexels.com/photos/32660201/pexels-photo-32660201.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt=""
+          loading="eager"
+        >
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="container hero__top">
+        <div class="hero__content">
+          <span class="eyebrow hero__eyebrow">Now live in 40+ cities</span>
+          <h1 class="hero__title">One operating layer for <em>every</em> city system</h1>
+          <p class="hero__lead text-lead">
+            SmartCity Nexus unifies traffic, energy, water, and public-safety data into a single
+            real-time layer — so city teams see what's happening and act on it in seconds, not days.
+          </p>
+          <div class="hero__actions">
+            <a href="contact.html" class="btn btn--primary">Request a demo</a>
+            <a href="#about" class="btn btn--glass">See how it works</a>
+          </div>
+        </div>
+
+        <div class="hero__floatcard glass">
+          <div class="hero__floatcard-head">
+            <span>Live grid status</span>
+            <span class="text-mono" style="color:#6FE3B4;">Normal</span>
+          </div>
+          <div class="hero__floatcard-row"><span class="dot"></span><span>Traffic — flowing</span></div>
+          <div class="hero__floatcard-row"><span class="dot"></span><span>Energy — 94% capacity</span></div>
+          <div class="hero__floatcard-row"><span class="dot"></span><span>Water — nominal</span></div>
+        </div>
+      </div>
+
+      <div class="container hero__panel-wrap">
+        <div class="hero__panel">
+          <div class="hero__panel-tabs">
+            <button type="button" class="hero__panel-tab is-active" data-tab="traffic">Traffic</button>
+            <button type="button" class="hero__panel-tab" data-tab="energy">Energy</button>
+            <button type="button" class="hero__panel-tab" data-tab="safety">Safety</button>
+          </div>
+          <div class="hero__panel-body">
+            <div class="hero__panel-field">
+              <label for="heroCity">City</label>
+              <select id="heroCity">
+                <option>Austin</option>
+                <option>Rotterdam</option>
+                <option>Busan</option>
+                <option>Lahore</option>
+              </select>
+            </div>
+            <div class="hero__panel-field">
+              <label for="heroLayer">Data layer</label>
+              <select id="heroLayer">
+                <option>Congestion map</option>
+                <option>Signal timing</option>
+                <option>Incident feed</option>
+              </select>
+            </div>
+            <div class="hero__panel-field">
+              <label for="heroWindow">Time window</label>
+              <select id="heroWindow">
+                <option>Last hour</option>
+                <option>Today</option>
+                <option>Last 7 days</option>
+              </select>
+            </div>
+            <a href="case-studies.html" class="btn btn--primary">View live demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="trust-strip">
+      <div class="container trust-strip__inner">
+        <div class="trust-strip__item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12L14 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Real-time data, not batch reports
+        </div>
+        <div class="trust-strip__item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12L14 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Trusted by 40+ city governments
+        </div>
+        <div class="trust-strip__item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12L14 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          SOC 2 Type II compliant
+        </div>
+        <div class="trust-strip__item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8.5L6 12L14 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          99.98% platform uptime
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section id="stats" class="stats">
+      <div class="container stats__inner">
+        <div class="stats__item">
+          <span class="stats__value" data-count-to="40" data-decimals="0"><span class="stats__count">0</span><span class="stats__suffix">+</span></span>
+          <span class="stats__label">Cities on the network</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__value" data-count-to="1.2" data-decimals="1"><span class="stats__count">0</span><span class="stats__suffix">M</span></span>
+          <span class="stats__label">Connected sensors</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__value" data-count-to="180" data-decimals="0"><span class="stats__count">0</span><span class="stats__suffix">ms</span></span>
+          <span class="stats__label">Median event latency</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__value" data-count-to="99.98" data-decimals="2"><span class="stats__count">0</span><span class="stats__suffix">%</span></span>
+          <span class="stats__label">Platform uptime</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPLOYMENT SPLIT ============ -->
+    <section class="section section--tight">
+      <div class="container split" data-reveal>
+        <div class="split__dark">
+          <span class="eyebrow" style="color:#6FE3B4;">Deployment</span>
+          <h2>Rolling out Nexus is simpler than it sounds</h2>
+          <p>No forklift upgrade, no multi-year procurement cycle. Most teams are looking at their first live data layer inside six weeks.</p>
+          <a href="case-studies.html" class="btn btn--glass" style="align-self:flex-start; border-color: rgba(255,255,255,0.25); color:#fff;">See rollout timelines</a>
+        </div>
+
+        <div class="split__benefits">
+          <div class="split__benefit">
+            <div class="split__benefit-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.4"/><path d="M9 5.5V9l2.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Fast detection</h4>
+            <p>Anomalies surface in seconds, not end-of-day reports.</p>
+          </div>
+          <div class="split__benefit">
+            <div class="split__benefit-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h3l2-5 3 10 2-5h2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Expert support</h4>
+            <p>A dedicated integration engineer for every deployment.</p>
+          </div>
+          <div class="split__benefit">
+            <div class="split__benefit-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="3" y="7" width="12" height="8" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M6 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.4"/></svg>
+            </div>
+            <h4>Predictable pricing</h4>
+            <p>Flat per-population pricing — no surprise overage fees.</p>
+          </div>
+          <div class="split__benefit">
+            <div class="split__benefit-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2 15 5v4c0 4-2.7 6.5-6 7-3.3-.5-6-3-6-7V5l6-3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Secure by design</h4>
+            <p>SOC 2 Type II compliant, isolated per-city by default.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section id="features" class="section features">
+      <div class="container">
+        <div class="features__header" data-reveal>
+          <span class="eyebrow">Platform</span>
+          <h2>Every system, one console</h2>
+        </div>
+
+        <div class="features__grid">
+          <div class="card" data-reveal>
+            <div class="card__icon">
+              <img src="assets/images/icon-traffic.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="card__title">Traffic intelligence</h3>
+            <p class="card__text">Live congestion mapping and adaptive signal timing that responds to real conditions, not fixed schedules.</p>
+          </div>
+
+          <div class="card" data-reveal>
+            <div class="card__icon">
+              <img src="assets/images/icon-energy.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="card__title">Energy grid monitoring</h3>
+            <p class="card__text">Track load, detect anomalies, and forecast demand across the distribution network in real time.</p>
+          </div>
+
+          <div class="card" data-reveal>
+            <div class="card__icon">
+              <img src="assets/images/icon-safety.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="card__title">Public safety alerts</h3>
+            <p class="card__text">Route incident data to the right response team automatically, with full audit history.</p>
+          </div>
+
+          <div class="card" data-reveal>
+            <div class="card__icon">
+              <img src="assets/images/icon-water.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="card__title">Water &amp; utilities</h3>
+            <p class="card__text">Leak detection and consumption analytics across the entire municipal water network.</p>
+          </div>
+
+          <div class="card" data-reveal>
+            <div class="card__icon">
+              <img src="assets/images/icon-maintenance.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="card__title">Predictive maintenance</h3>
+            <p class="card__text">Flag failing infrastructure before it fails, using sensor trends instead of fixed inspection cycles.</p>
+          </div>
+
+          <div class="card" data-reveal>
+            <div class="card__icon">
+              <img src="assets/images/icon-api.svg" alt="" width="28" height="28">
+            </div>
+            <h3 class="card__title">Open data API</h3>
+            <p class="card__text">Give researchers and local developers secure, permissioned access to anonymized civic data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DASHBOARD PREVIEW ============ -->
+    <section id="dashboard-preview" class="section section--subtle">
+      <div class="container">
+        <div class="features__header" data-reveal>
+          <span class="eyebrow">Live preview</span>
+          <h2>What your team actually looks at every morning</h2>
+        </div>
+
+        <div class="dashboard" data-reveal>
+          <div class="dashboard__bar">
+            <div class="dashboard__bar-left">
+              <span class="dashboard__dot" aria-hidden="true"></span>
+              <span class="dashboard__bar-title">NEXUS · CITY OF AUSTIN · TRAFFIC LAYER</span>
+            </div>
+            <span class="dashboard__bar-time">Updated just now</span>
+          </div>
+          <div class="dashboard__body">
+            <div class="dashboard__kpis">
+              <div class="dashboard__kpi">
+                <span class="dashboard__kpi-label">Active sensors</span>
+                <span class="dashboard__kpi-value" data-base="12482" data-decimals="0">12482</span>
+                <span class="dashboard__kpi-delta">▲ 1.2%</span>
+              </div>
+              <div class="dashboard__kpi">
+                <span class="dashboard__kpi-label">Avg. congestion index</span>
+                <span class="dashboard__kpi-value" data-base="34.6" data-decimals="1">34.6</span>
+                <span class="dashboard__kpi-delta is-down">▼ 3.4%</span>
+              </div>
+              <div class="dashboard__kpi">
+                <span class="dashboard__kpi-label">Open incidents</span>
+                <span class="dashboard__kpi-value" data-base="7" data-decimals="0">7</span>
+                <span class="dashboard__kpi-delta is-down">▼ 2</span>
+              </div>
+            </div>
+
+            <div class="dashboard__chart">
+              <div class="dashboard__chart-head">
+                <h4>Congestion by district — last 7 hours</h4>
+                <div class="dashboard__legend"><span><i></i> Live reading</span></div>
+              </div>
+              <div class="dashboard__bars">
+                <div class="dashboard__bar-col"><div class="dashboard__bar-fill" data-min="30" data-max="90" style="height:60%;"></div><span>07:00</span></div>
+                <div class="dashboard__bar-col"><div class="dashboard__bar-fill" data-min="30" data-max="90" style="height:75%;"></div><span>08:00</span></div>
+                <div class="dashboard__bar-col"><div class="dashboard__bar-fill" data-min="30" data-max="90" style="height:85%;"></div><span>09:00</span></div>
+                <div class="dashboard__bar-col"><div class="dashboard__bar-fill" data-min="30" data-max="90" style="height:55%;"></div><span>10:00</span></div>
+                <div class="dashboard__bar-col"><div class="dashboard__bar-fill" data-min="30" data-max="90" style="height:40%;"></div><span>11:00</span></div>
+                <div class="dashboard__bar-col"><div class="dashboard__bar-fill" data-min="30" data-max="90" style="height:65%;"></div><span>12:00</span></div>
+                <div class="dashboard__bar-col"><div class="dashboard__bar-fill" data-min="30" data-max="90" style="height:70%;"></div><span>13:00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / HOW IT WORKS ============ -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about__header" data-reveal>
+          <span class="eyebrow">How it works</span>
+          <h2>From raw sensor data to a decision, in three steps</h2>
+        </div>
+
+        <div class="about__steps" data-reveal>
+          <div class="about__step">
+            <span class="about__step-index">01</span>
+            <h3>Connect</h3>
+            <p>Existing sensors, cameras, and meters plug into Nexus through open protocols — no rip-and-replace required.</p>
+          </div>
+          <div class="about__step">
+            <span class="about__step-index">02</span>
+            <h3>Unify</h3>
+            <p>Every feed lands in one normalized data layer, timestamped and geo-tagged for cross-system correlation.</p>
+          </div>
+          <div class="about__step">
+            <span class="about__step-index">03</span>
+            <h3>Act</h3>
+            <p>Rules and dashboards turn that data into alerts, automations, and reports your teams actually use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="testimonials__header" data-reveal>
+          <span class="eyebrow">Cities on Nexus</span>
+          <h2>Built with the people who run cities</h2>
+        </div>
+
+        <div class="testimonials__grid">
+          <blockquote class="testimonial" data-reveal>
+            <p class="testimonial__quote">"We cut average incident response time by a third in the first two quarters."</p>
+            <footer class="testimonial__author">
+              <img class="testimonial__avatar" src="https://i.pravatar.cc/150?img=32" alt="" width="36" height="36">
+              <div>
+                <div class="testimonial__name">Elena Voss</div>
+                <div class="testimonial__role">Director of Mobility, City of Rotterdam</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial" data-reveal>
+            <p class="testimonial__quote">"Finally, one dashboard our operations team actually opens every morning."</p>
+            <footer class="testimonial__author">
+              <img class="testimonial__avatar" src="https://i.pravatar.cc/150?img=53" alt="" width="36" height="36">
+              <div>
+                <div class="testimonial__name">Marcus Ojo</div>
+                <div class="testimonial__role">Chief Data Officer, City of Austin</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial" data-reveal>
+            <p class="testimonial__quote">"Predictive maintenance alone paid for the platform within a year."</p>
+            <footer class="testimonial__author">
+              <img class="testimonial__avatar" src="https://i.pravatar.cc/150?img=47" alt="" width="36" height="36">
+              <div>
+                <div class="testimonial__name">Hana Kim</div>
+                <div class="testimonial__role">Head of Infrastructure, City of Busan</div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section id="cta" class="cta" data-reveal>
+      <span class="eyebrow cta__eyebrow">Get started</span>
+      <h2>See Nexus running on your city's own data</h2>
+      <p>We'll set up a sandbox with a live feed from one of your existing systems — no procurement required to take a look.</p>
+      <div class="cta__actions">
+        <a href="contact.html" class="btn btn--primary">Request a demo</a>
+        <a href="contact.html" class="btn btn--ghost">Talk to sales</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <span class="nav__logo-mark" aria-hidden="true"></span>
+            SmartCity Nexus
+          </div>
+          <p class="footer__tagline">One real-time operating layer for traffic, energy, water, and public safety.</p>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Platform</div>
+          <div class="footer__links">
+            <a href="#features">Traffic</a>
+            <a href="#features">Energy</a>
+            <a href="#features">Public safety</a>
+            <a href="#features">Open API</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Company</div>
+          <div class="footer__links">
+            <a href="about.html">About</a>
+            <a href="case-studies.html">Case studies</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <div class="footer__links">
+            <a href="mailto:muhammadumargomal123@gmail.com">muhammadumargomal123@gmail.com</a>
+            <a href="tel:+923351188090">+92 335 1188090</a>
+            <span class="text-small" style="color:var(--color-text-secondary);">Lahore, Pakistan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 SMARTCITY NEXUS — BUILT BY MUHAMMAD UMAR</span>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/muhammad-umar-647859338/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/muhammadumar-dev07" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="mailto:muhammadumargomal123@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/stats-counter.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

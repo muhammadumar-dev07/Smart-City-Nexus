@@ -1,0 +1,54 @@
+/* ===================================================================
+   CARDS — base glass card, reused across features/testimonials
+=================================================================== */
+
+.card {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  transition: transform var(--duration-base) var(--ease-out),
+              box-shadow var(--duration-base) var(--ease-out),
+              border-color var(--duration-base) var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-border-soft);
+}
+
+.card__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-md);
+  border: var(--border-width) solid var(--color-border-soft);
+  display: grid;
+  place-items: center;
+  background: var(--color-bg);
+}
+
+.card__icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.card__title {
+  margin-bottom: var(--space-2xs);
+}
+
+.card__text {
+  font-size: var(--fs-small);
+}
+
+/* Reveal-on-scroll defaults, used with [data-reveal] from scroll-reveal.js */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

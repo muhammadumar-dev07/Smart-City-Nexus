@@ -1,0 +1,89 @@
+/* ===================================================================
+   DESIGN TOKENS — SmartCity Nexus
+   White / black-hairline / glass aesthetic. Every color, space, and
+   radius used anywhere in the project should trace back to here.
+=================================================================== */
+
+:root {
+  /* ---- Color: surfaces ---- */
+  --color-bg: #FFFFFF;
+  --color-bg-subtle: #FAFAF9;      /* faint off-white for alternating sections */
+  --color-surface-glass: rgba(255, 255, 255, 0.55);
+  --color-surface-glass-strong: rgba(255, 255, 255, 0.75);
+  --color-surface-dark: #0D0D0D;   /* used sparingly: footer / CTA band */
+
+  /* ---- Color: borders (the hairline blueprint signature) ---- */
+  --color-border: #111111;
+  --color-border-soft: rgba(17, 17, 17, 0.12);
+  --color-border-glass: rgba(17, 17, 17, 0.08);
+  --border-width: 1px;
+
+  /* ---- Color: text ---- */
+  --color-text-primary: #080808;
+  --color-text-secondary: #3f4552;
+  --color-text-muted: #9CA3AF;
+  --color-text-inverse: #FFFFFF;
+
+  /* ---- Color: accent (used only for glow / CTA / focus moments) ---- */
+  --color-accent: #3B5BFF;
+  --color-accent-soft: rgba(59, 91, 255, 0.10);
+  --color-accent-glow: rgba(59, 91, 255, 0.35);
+
+  /* ---- Typography ---- */
+  --font-display: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --fs-h1: clamp(2.75rem, 5vw + 1rem, 5rem);
+  --fs-h2: clamp(2rem, 3vw + 1rem, 3rem);
+  --fs-h3: clamp(1.375rem, 1.2vw + 1rem, 1.75rem);
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-mono: 0.8125rem;
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.35;
+  --lh-normal: 1.6;
+
+  /* ---- Spacing scale (tightened — was running too loose) ---- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 5.5rem;
+
+  /* ---- Layout ---- */
+  --container-max: 1240px;
+  --container-pad: clamp(1.25rem, 4vw, 3rem);
+
+  /* ---- Radius (kept small/near-square to support the blueprint feel) ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* ---- Blur / glass ---- */
+  --blur-glass: 20px;
+  --blur-glass-strong: 32px;
+
+  /* ---- Shadow (soft, never dark/dramatic — keeps the white theme light) ---- */
+  --shadow-sm: 0 1px 2px rgba(17, 17, 17, 0.04);
+  --shadow-md: 0 8px 24px rgba(17, 17, 17, 0.06);
+  --shadow-lg: 0 20px 48px rgba(17, 17, 17, 0.08);
+  --shadow-accent: 0 8px 32px var(--color-accent-glow);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 600ms;
+
+  /* ---- Z-index scale ---- */
+  --z-nav: 100;
+  --z-overlay: 200;
+}

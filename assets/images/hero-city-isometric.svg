@@ -1,0 +1,120 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Isometric illustration of a connected smart city grid</title>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FAFAF9"/>
+    </linearGradient>
+    <linearGradient id="faceLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F1F1EF"/>
+    </linearGradient>
+    <linearGradient id="faceMid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EDEDEB"/>
+      <stop offset="100%" stop-color="#E1E1DE"/>
+    </linearGradient>
+    <linearGradient id="faceDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D9D9D6"/>
+      <stop offset="100%" stop-color="#CACAC6"/>
+    </linearGradient>
+    <radialGradient id="glowAccent" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B5BFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3B5BFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bgGrad)"/>
+
+  <!-- ambient accent glow -->
+  <circle cx="420" cy="380" r="300" fill="url(#glowAccent)"/>
+
+  <!-- ground grid (isometric) -->
+  <g stroke="#111111" stroke-opacity="0.08" stroke-width="1">
+    <path d="M100 560 L400 400 L700 560 L400 720 Z"/>
+    <path d="M160 560 L400 432 L640 560" fill="none"/>
+    <path d="M220 560 L400 464 L580 560" fill="none"/>
+    <path d="M280 560 L400 496 L520 560" fill="none"/>
+    <path d="M340 560 L400 528 L460 560" fill="none"/>
+    <path d="M250 500 L400 420 L400 720" fill="none"/>
+    <path d="M550 500 L400 420" fill="none"/>
+  </g>
+
+  <!-- === Building A (tallest, center-left) === -->
+  <g>
+    <polygon points="280,430 360,474 360,650 280,606" fill="url(#faceMid)" stroke="#111111" stroke-width="1.5"/>
+    <polygon points="360,474 440,430 440,606 360,650" fill="url(#faceDark)" stroke="#111111" stroke-width="1.5"/>
+    <polygon points="280,430 360,386 440,430 360,474" fill="url(#faceLight)" stroke="#111111" stroke-width="1.5"/>
+    <!-- windows -->
+    <g fill="#3B5BFF">
+      <rect x="296" y="452" width="10" height="10" rx="1.5"/>
+      <rect x="296" y="480" width="10" height="10" rx="1.5" fill="#111111" fill-opacity="0.12"/>
+      <rect x="296" y="508" width="10" height="10" rx="1.5"/>
+      <rect x="296" y="536" width="10" height="10" rx="1.5" fill="#111111" fill-opacity="0.12"/>
+      <rect x="322" y="466" width="10" height="10" rx="1.5" fill="#111111" fill-opacity="0.12"/>
+      <rect x="322" y="494" width="10" height="10" rx="1.5"/>
+      <rect x="322" y="522" width="10" height="10" rx="1.5" fill="#111111" fill-opacity="0.12"/>
+    </g>
+  </g>
+
+  <!-- === Building B (mid, right of A) === -->
+  <g>
+    <polygon points="420,470 480,504 480,650 420,616" fill="url(#faceMid)" stroke="#111111" stroke-width="1.5"/>
+    <polygon points="480,504 540,470 540,616 480,650" fill="url(#faceDark)" stroke="#111111" stroke-width="1.5"/>
+    <polygon points="420,470 480,436 540,470 480,504" fill="url(#faceLight)" stroke="#111111" stroke-width="1.5"/>
+    <g fill="#3B5BFF">
+      <rect x="434" y="490" width="9" height="9" rx="1.5" fill="#111111" fill-opacity="0.12"/>
+      <rect x="434" y="515" width="9" height="9" rx="1.5"/>
+      <rect x="434" y="540" width="9" height="9" rx="1.5" fill="#111111" fill-opacity="0.12"/>
+      <rect x="458" y="503" width="9" height="9" rx="1.5"/>
+      <rect x="458" y="528" width="9" height="9" rx="1.5" fill="#111111" fill-opacity="0.12"/>
+    </g>
+  </g>
+
+  <!-- === Building C (short, left) === -->
+  <g>
+    <polygon points="180,500 230,528 230,620 180,592" fill="url(#faceMid)" stroke="#111111" stroke-width="1.5"/>
+    <polygon points="230,528 280,500 280,592 230,620" fill="url(#faceDark)" stroke="#111111" stroke-width="1.5"/>
+    <polygon points="180,500 230,472 280,500 230,528" fill="url(#faceLight)" stroke="#111111" stroke-width="1.5"/>
+    <g fill="#111111" fill-opacity="0.12">
+      <rect x="192" y="516" width="8" height="8" rx="1.5"/>
+      <rect x="192" y="538" width="8" height="8" rx="1.5" fill="#3B5BFF" fill-opacity="1"/>
+      <rect x="192" y="560" width="8" height="8" rx="1.5"/>
+    </g>
+  </g>
+
+  <!-- === Building D (short, right) === -->
+  <g>
+    <polygon points="520,510 566,536 566,616 520,590" fill="url(#faceMid)" stroke="#111111" stroke-width="1.5"/>
+    <polygon points="566,536 612,510 612,590 566,616" fill="url(#faceDark)" stroke="#111111" stroke-width="1.5"/>
+    <polygon points="520,510 566,484 612,510 566,536" fill="url(#faceLight)" stroke="#111111" stroke-width="1.5"/>
+    <g fill="#111111" fill-opacity="0.12">
+      <rect x="532" y="526" width="8" height="8" rx="1.5" fill="#3B5BFF" fill-opacity="1"/>
+      <rect x="532" y="548" width="8" height="8" rx="1.5"/>
+      <rect x="532" y="570" width="8" height="8" rx="1.5"/>
+    </g>
+  </g>
+
+  <!-- rooftop antenna + pulse on tallest building -->
+  <g stroke="#111111" stroke-width="1.5">
+    <line x1="360" y1="386" x2="360" y2="352"/>
+  </g>
+  <circle cx="360" cy="346" r="5" fill="#3B5BFF"/>
+  <circle cx="360" cy="346" r="11" fill="none" stroke="#3B5BFF" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="360" cy="346" r="18" fill="none" stroke="#3B5BFF" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- data-flow arcs connecting buildings -->
+  <g fill="none" stroke="#3B5BFF" stroke-width="1.5" stroke-dasharray="2 6" stroke-linecap="round" opacity="0.6">
+    <path d="M360 400 Q 400 350 480 450"/>
+    <path d="M280 460 Q 240 420 230 500"/>
+    <path d="M440 460 Q 500 440 566 500"/>
+  </g>
+
+  <!-- small drone / node marker drifting above the scene -->
+  <g transform="translate(500,300)">
+    <circle r="4" fill="#111111"/>
+    <circle r="10" fill="none" stroke="#111111" stroke-opacity="0.25" stroke-width="1"/>
+  </g>
+  <g transform="translate(250,330)">
+    <circle r="3" fill="#111111" fill-opacity="0.5"/>
+  </g>
+</svg>

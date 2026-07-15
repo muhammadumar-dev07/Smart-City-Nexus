@@ -1,0 +1,33 @@
+/* ===================================================================
+   GLASS — the blur system. Every frosted surface in the project
+   (nav, cards, dropdowns, testimonial panels) draws from this file.
+=================================================================== */
+
+.glass {
+  background: var(--color-surface-glass);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+  border: var(--border-width) solid var(--color-border-glass);
+}
+
+.glass--strong {
+  background: var(--color-surface-glass-strong);
+  backdrop-filter: blur(var(--blur-glass-strong));
+  -webkit-backdrop-filter: blur(var(--blur-glass-strong));
+}
+
+/* Fallback for browsers without backdrop-filter support */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass, .glass--strong {
+    background: rgba(255, 255, 255, 0.92);
+  }
+}
+
+/* Hairline-border "blueprint" surface — the opaque counterpart to
+   .glass, used where a card should read as solid/technical rather
+   than floating. */
+.panel {
+  background: var(--color-bg);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+}

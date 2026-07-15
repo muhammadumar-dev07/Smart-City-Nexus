@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — SmartCity Nexus</title>
+  <meta name="description" content="The story behind SmartCity Nexus — a real-time operating layer for city infrastructure — and the person building it.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/glass.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/page-header.css">
+  <link rel="stylesheet" href="css/about-page.css">
+  <link rel="stylesheet" href="css/cta.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav glass" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true"></span>
+        SmartCity Nexus
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#features" class="nav__link">Platform</a>
+        <a href="index.html#about" class="nav__link">How it works</a>
+        <a href="case-studies.html" class="nav__link">Case Studies</a>
+        <a href="pricing.html" class="nav__link">Pricing</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="about.html" class="btn btn--ghost btn--sm" style="color:var(--color-text-primary);">About</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Request a demo</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-header">
+      <div class="container">
+        <span class="page-header__crumb"><a href="index.html">Home</a> / About</span>
+        <h1>Infrastructure teams shouldn't need six dashboards</h1>
+        <p class="text-lead">SmartCity Nexus started from a simple observation: cities already collect enormous amounts of data — it's just scattered across systems that don't talk to each other.</p>
+      </div>
+    </section>
+
+    <!-- ============ MISSION ============ -->
+    <section class="section">
+      <div class="container mission">
+        <div class="mission__photo">
+          <img
+            src="https://images.pexels.com/photos/32082430/pexels-photo-32082430.jpeg?auto=compress&cs=tinysrgb&w=1000"
+            alt="A team collaborating around a table with laptops, planning a project"
+            loading="lazy"
+          >
+        </div>
+        <div class="mission__text" data-reveal>
+          <span class="eyebrow">Our mission</span>
+          <h2>One layer, not six logins</h2>
+          <p>Traffic systems, energy monitors, water sensors, and safety cameras are usually built by different vendors, on different timelines, with no shared data model. City teams end up stitching together spreadsheets just to answer basic questions.</p>
+          <p>Nexus exists to remove that gap — a single, real-time layer that any existing system can plug into, and any team can actually use without a six-week training program.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VALUES ============ -->
+    <section class="section section--tight section--subtle">
+      <div class="container">
+        <div class="features__header" data-reveal>
+          <span class="eyebrow">What we optimize for</span>
+          <h2>Three things we don't compromise on</h2>
+        </div>
+
+        <div class="values-grid">
+          <div class="card panel" data-reveal>
+            <div class="card__icon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M4 11l5 5L18 6" stroke="#3B5BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Reliability</h3>
+            <p class="card__text">99.98% uptime isn't a marketing number — it's a requirement when the data behind it is traffic signals and safety alerts.</p>
+          </div>
+          <div class="card panel" data-reveal>
+            <div class="card__icon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="4" y="4" width="14" height="14" rx="2" stroke="#3B5BFF" stroke-width="2"/><path d="M8 11h6M8 15h4" stroke="#3B5BFF" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="card__title">Transparency</h3>
+            <p class="card__text">Every alert and automation is traceable back to the raw reading that triggered it — no black-box scoring.</p>
+          </div>
+          <div class="card panel" data-reveal>
+            <div class="card__icon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="7" stroke="#3B5BFF" stroke-width="2"/><path d="M11 4v14M4 11h14" stroke="#3B5BFF" stroke-width="1.4" stroke-opacity="0.5"/></svg>
+            </div>
+            <h3 class="card__title">Openness</h3>
+            <p class="card__text">Standard protocols in, an open API out. Nothing about Nexus locks a city into a single vendor forever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUILDER PROFILE ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="features__header" data-reveal>
+          <span class="eyebrow">Who's behind this</span>
+          <h2>Built by one person, in the open</h2>
+        </div>
+
+        <div class="profile-card panel" data-reveal>
+          <div class="profile-card__avatar" aria-hidden="true">MU</div>
+          <div>
+            <h3 class="profile-card__name">Muhammad Umar</h3>
+            <div class="profile-card__role">BS Computer Science, Gomal University — Frontend Developer</div>
+            <p class="profile-card__bio">SmartCity Nexus is an independent frontend build — designed and coded from scratch as a portfolio project exploring what a real-time civic data platform could look like, built entirely with vanilla HTML, CSS, and JavaScript.</p>
+            <div class="profile-card__links">
+              <a href="https://github.com/muhammadumar-dev07" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/muhammad-umar-647859338/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="mailto:muhammadumargomal123@gmail.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta" data-reveal>
+      <span class="eyebrow cta__eyebrow">Get started</span>
+      <h2>See Nexus running on your city's own data</h2>
+      <p>We'll set up a sandbox with a live feed from one of your existing systems — no procurement required to take a look.</p>
+      <div class="cta__actions">
+        <a href="contact.html" class="btn btn--primary">Request a demo</a>
+        <a href="contact.html" class="btn btn--ghost">Talk to sales</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">
+            <span class="nav__logo-mark" aria-hidden="true"></span>
+            SmartCity Nexus
+          </div>
+          <p class="footer__tagline">One real-time operating layer for traffic, energy, water, and public safety.</p>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Platform</div>
+          <div class="footer__links">
+            <a href="index.html#features">Traffic</a>
+            <a href="index.html#features">Energy</a>
+            <a href="index.html#features">Public safety</a>
+            <a href="index.html#features">Open API</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Company</div>
+          <div class="footer__links">
+            <a href="about.html">About</a>
+            <a href="case-studies.html">Case studies</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Contact</div>
+          <div class="footer__links">
+            <a href="mailto:muhammadumargomal123@gmail.com">muhammadumargomal123@gmail.com</a>
+            <a href="tel:+923351188090">+92 335 1188090</a>
+            <span class="text-small" style="color:var(--color-text-secondary);">Lahore, Pakistan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 SMARTCITY NEXUS — BUILT BY MUHAMMAD UMAR</span>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/muhammad-umar-647859338/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/muhammadumar-dev07" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="mailto:muhammadumargomal123@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

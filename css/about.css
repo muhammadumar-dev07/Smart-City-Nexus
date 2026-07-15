@@ -1,0 +1,56 @@
+/* ===================================================================
+   ABOUT / HOW IT WORKS — a real sequence, so numbering is earned here
+=================================================================== */
+
+.about__header {
+  max-width: 56ch;
+  margin-bottom: var(--space-xl);
+}
+
+.about__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: var(--border-width) solid var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.about__step {
+  padding: var(--space-lg);
+  border-left: var(--border-width) solid var(--color-border-soft);
+  position: relative;
+}
+
+.about__step:first-child {
+  border-left: none;
+}
+
+.about__step-index {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.about__step h3 {
+  margin-bottom: var(--space-2xs);
+}
+
+.about__step p {
+  font-size: var(--fs-small);
+}
+
+@media (max-width: 760px) {
+  .about__steps {
+    grid-template-columns: 1fr;
+  }
+  .about__step {
+    border-left: none;
+    border-top: var(--border-width) solid var(--color-border-soft);
+  }
+  .about__step:first-child {
+    border-top: none;
+  }
+}
