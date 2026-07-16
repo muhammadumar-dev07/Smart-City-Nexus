@@ -127,7 +127,7 @@
 
 /* ---- Bottom metrics panel — overlaps the hero/next-section boundary ---- */
 .hero__panel-wrap {
-  margin-top: auto;
+  margin-top: 10vh;
   position: relative;
   z-index: 2;
 }
